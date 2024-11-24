@@ -39,4 +39,5 @@
 
 body {
   font: var(--text);
+  overflow: hidden;
 }
