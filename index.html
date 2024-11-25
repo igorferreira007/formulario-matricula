@@ -29,7 +29,7 @@
             educação infantil Estrelas do Amanhã.
           </p>
 
-          <form method="post" enctype="multipart/form-data">
+          <form method="post" enctype="multipart/form-data" onsubmit="handleSubmit(event)">
             <fieldset class="child-info">
               <legend>Informações da criança</legend>
 
@@ -296,5 +296,21 @@
         </div>
       </aside>
     </div>
+
+    <script>
+      function handleSubmit(event) {
+        // Previne o comportamento padrão do formulário
+        event.preventDefault();
+  
+        // Obtém os dados do formulário
+        const form = event.target;
+        const formData = new FormData(form);
+  
+        // Exibe o arquivo selecionado no console
+        console.log('Arquivo enviado:', formData.get('file'));
+  
+        // Aqui você pode adicionar lógica para enviar os dados via AJAX
+      }
+    </script>
   </body>
 </html>
