@@ -20,6 +20,11 @@ label + .radio-wrapper {
 
   position: relative;
 
+  > label {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
   input,
   input:focus,
   input:hover {
