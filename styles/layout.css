@@ -50,3 +50,26 @@ aside {
     }
   }
 }
+
+@media (width < 1280px) {
+  #app {
+    display: grid;
+    grid-template-columns: 100%; /* Apenas uma coluna */
+    grid-template-rows: auto auto; /* Duas linhas, uma para cada item */
+    overflow: initial !important;
+  }
+
+  main {
+    height: 100%;
+    overflow: initial;
+    margin-inline: auto;
+  }
+
+  aside {
+    grid-row: 1/2;
+
+    & > div {
+      margin-inline: auto;
+    }
+  }
+}

@@ -63,3 +63,9 @@ img {
 .flex-2 {
   flex: 2;
 }
+
+@media (width < 1280px) {
+  body {
+    overflow: initial !important;
+  }
+}
