@@ -63,10 +63,15 @@ aside {
     height: 100%;
     overflow: initial;
     margin-inline: auto;
+    padding-inline: 1.6rem;
   }
 
   aside {
     grid-row: 1/2;
+
+    & h2 {
+      font-size: 2.4rem;
+    }
 
     & > div {
       margin-inline: auto;
